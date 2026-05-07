@@ -1227,6 +1227,11 @@ a:focus {
     display: flex;
   }
 
+  /* Hide the current/active page from the dropdown on mobile */
+  .nav-menu .nav-link.is-active {
+    display: none;
+  }
+
   .nav-menu .nav-link {
     width: 100%;
     font-size: 0.92rem;
