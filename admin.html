@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Admin — Saarkesh Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0b0a'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='34' font-weight='700' fill='%23d6a33f'%3ES%3C/text%3E%3C/svg%3E" />
     <style>
       body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#0b0b0a;color:#f4efe3}
       .wrap{max-width:980px;margin:28px auto;padding:20px}
@@ -22,9 +23,28 @@
       .muted{color:#c7beab;font-size:0.9rem}
       .login{max-width:460px;margin:18px auto}
       .hidden{display:none}
+      .brand-badge{
+        position:fixed;
+        top:18px;
+        right:18px;
+        width:48px;
+        height:48px;
+        display:grid;
+        place-items:center;
+        border-radius:14px;
+        background:rgba(214,163,63,0.12);
+        border:1px solid rgba(214,163,63,0.28);
+        color:#d6a33f;
+        font:700 1.6rem/1 Arial,Helvetica,sans-serif;
+        letter-spacing:0.04em;
+        box-shadow:0 10px 30px rgba(0,0,0,0.28);
+        z-index:20;
+        user-select:none;
+      }
     </style>
   </head>
   <body>
+    <div class="brand-badge" aria-label="Saarkesh" title="Saarkesh">S</div>
     <div class="wrap">
       <h1>Admin — Content Editor (local-only)</h1>
       <p class="muted">This page is not linked from the site. Create a private password (stored in your browser) to access the editor. Changes here update the content model and can be downloaded as <code>site-content.js</code> for committing to the repo.</p>
